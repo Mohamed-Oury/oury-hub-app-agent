@@ -1,0 +1,13 @@
+# Secrets : la configuration est passée au lancement, jamais copiée dans l'image.
+.env
+.env.*
+
+.git
+.venv
+.idea
+outputs
+tests
+evals
+**/__pycache__
+.pytest_cache
+.ruff_cache

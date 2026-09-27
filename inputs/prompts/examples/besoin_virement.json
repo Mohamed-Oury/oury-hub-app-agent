@@ -1,0 +1,15 @@
+{
+  "title": "Virement interne entre deux comptes",
+  "functionalDescription": "L'agent de guichet saisit le compte à débiter, le compte à créditer et le montant. Le système contrôle l'existence des deux comptes et le solde disponible, puis enregistre le virement. Un message confirme l'opération ou explique le rejet.",
+  "bankingDomain": "Virements & Moyens de Paiement",
+  "targetUsers": "Agents de guichet et chargés de clientèle",
+  "knownBusinessRules": "Tables concernées : bkcpt (ncp : numéro de compte, sde : solde) pour les comptes, bktra pour l'enregistrement du virement.\nLe compte à débiter et le compte à créditer sont différents.\nLe montant est strictement positif.\nLe solde du compte à débiter couvre le montant du virement.",
+  "inputData": [
+    "Numéro du compte à débiter",
+    "Numéro du compte à créditer",
+    "Montant du virement",
+    "Motif du virement"
+  ],
+  "amplitudeVersion": "v11",
+  "technicalEnvironment": "Informix-4GL 7.50 sur AIX, base Informix"
+}
